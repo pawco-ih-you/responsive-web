@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'Nanum Gothic';
+  src: url(../webfont/NanumGothic.eot)
+}
+
+@font-face {
+  font-family: 'Nanum Gothic';
+  src: url(../webfont/NanumGothic.woff)
+}
+
+/*CSS reset*/
+html,
+  /*Contents Model*/
+
+  /*Main content categories*/
+  /*Heading*/
+h1, h2, h3, h4, h5, h6, hgroup,
+  /*Sectioning*/
+article, nav, aside, section,
+  /*Sectioning root*/
+details, body, blockquote, td, figure, fieldset,
+  /*interactive*/
+details, summary, a, button, label, select, textarea, input,
+  /*Embedded*/
+iframe, canvas, object, embed, video, audio, img, svg, math,
+  /*Phrasing*/
+code, output, var, abbr, cite, code, dfn, kbd, samp, map, area, data, time,
+p, br, wbr, pre, ul, ol, li, dl, dt, dd, span, menu, menuitem,
+strong, em, mark, cite, sub, sup, bdo, del, ins, b, i,
+  /*Flow*/
+main, header, footer, div,
+figure, figcaption, table, tbody, tfoot, thead, td, tr, th, caption
+  /*Form-associated content*/
+fieldset, button, progress, meter, input, output, label, datalist, select, textarea, object {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  font-family: NanumGothic, 나눔고딕, 'Nanum Gothic', '맑은 고딕', HelveticaNeue, DroidSans, Sans-serif, Helvetica, serif;
+  background: url(images/s_images/body_bg.png);
+  line-height: 1;
+}
+
+article, aside, nav, section, footer, header, figure, figcaption, details, hgroup, menu {
+  display: block;
+}
+
+nav ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+img {
+  vertical-align: top;
+}
+
