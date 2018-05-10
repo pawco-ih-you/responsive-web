@@ -1,23 +1,22 @@
 @charset "UTF-8";
+
 main {
-  display: flex;
   flex-flow: column nowrap;
   width: 80%;
-  margin: 0 auto;
   max-width: 1200px;
+  margin: auto 0;
 }
 
-/*tablet*/
-@media (min-width: 768px) {
+@media (min-width:768px){
   main {
     flex-flow: row wrap;
+    
   }
 }
 
-/*pc*/
-@media (min-width: 960px) {
+@media (min-width: 960px){
   main {
     position: relative;
-    width: 90%;
+    width: 90%
   }
 }
