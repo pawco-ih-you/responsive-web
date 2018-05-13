@@ -17,10 +17,6 @@
       background-color: darkgray;
     }
 
-    header {
-      background-color: green;
-    }
-
     nav {
       background-color: darkolivegreen;
     }
@@ -68,29 +64,28 @@
 </head>
 <body>
   <header>
-    <h1 class="logo">FLAT<br>DESIGN</h1>
+    <ul id="info">
+      <li><a href="index.html"><img src="images/s_images/info_icon_01.png" alt="home"></a></li>
+      <li><a href=""><img src="images/s_images/info_icon_02.png" alt="login"></a></li>
+      <li><a href=""><img src="images/s_images/info_icon_03.png" alt="join"></a></li>
+      <li><a href=""><img src="images/s_images/info_icon_04.png" alt="find"></a></li>
+    </ul>
+    <h1 id="logo">FLAT<br>DESIGN</h1>
   </header>
-  <nav>
-    <section>
-      <span class="menu_toggle_btn">전체메뉴 토글 버튼</span>
-      <ul class="gnb">
-        <li><a href="index.html">홈</a><span class="sub_menu_toggle_btn">하위메뉴토글버튼</span></li>
-        <li><a href="introduce.html">플랫 디자인이란?</a><span class="sub_menu_toggle_btn">하위메뉴토글버튼</span></li>
-        <li><a href="gallery.html">갤러리</a><span class="sub_menu_toggle_btn">하위메뉴토글버튼</span></li>
-        <li><a href="board.html">문의사항</a><span class="sub_menu_toggle_btn">하위메뉴토글버튼</span></li>
-      </ul>
-    </section>
-    <section>
-      <ul>
-        <li><a href="index.html"><img src="images/s_images/info_icon_01.png" alt="home"></a></li>
-        <li><a href=""><img src="images/s_images/info_icon_02.png" alt="login"></a></li>
-        <li><a href=""><img src="images/s_images/info_icon_03.png" alt="join"></a></li>
-        <li><a href=""><img src="images/s_images/info_icon_04.png" alt="find"></a></li>
-      </ul>
-    </section>
+
+  <nav id="gnb">
+    <span class="menu_toggle_btn">전체메뉴 토글 버튼</span>
+    <ul class="gnb">
+      <li><a href="index.html">홈</a><span class="sub_menu_toggle_btn">하위메뉴토글버튼</span></li>
+      <li><a href="introduce.html">플랫 디자인이란?</a><span class="sub_menu_toggle_btn">하위메뉴토글버튼</span></li>
+      <li><a href="gallery.html">갤러리</a><span class="sub_menu_toggle_btn">하위메뉴토글버튼</span></li>
+      <li><a href="board.html">문의사항</a><span class="sub_menu_toggle_btn">하위메뉴토글버튼</span></li>
+    </ul>
   </nav>
   <main>
-    <aside class="slider">slider</aside>
+    <aside class="slider">
+      <span class="slider_section">이전 버튼</span><span class="next_btn">다음 버튼</span>
+    </aside>
     <section class="latest-post">
       <h2 class="title">최근 글</h2>
       <ul>

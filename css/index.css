@@ -1,5 +1,13 @@
 @charset "UTF-8";
-main {
+html {
+  height: 100%;
+  background: #c72;
+  overflow: hidden;
+}
+
+body {
+  height: 100%;
+  overflow: auto;
   display: flex;
   flex-flow: column nowrap;
   width: 80%;
@@ -7,17 +15,91 @@ main {
   max-width: 1200px;
 }
 
+/*header*/
+header {
+  order: 1;
+  width: 100%;
+  color: white;
+  background: #2ecc71;
+}
+
+#logo {
+  padding: 30px 0;
+  padding: 1.875rem 0;
+  line-height: 21px;
+  line-height: 1.313rem;
+  font-size: 1.188em;
+  font-size: 1.188rem;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0px 1px 1px #25ab5e;
+}
+
+#info {
+  display: flex;
+  order: 1;
+  width: 100%;
+  background: #2ecc71;
+  border-bottom: 1px solid #39d67c;
+}
+
+#info li {
+  width: 25%;
+  text-align: center;
+}
+
+#info li a {
+  display: block;
+  padding: 15px 0;
+  padding: 0.938rem 0;
+}
+
+nav#gnb {
+}
+
+main {
+  order: 4;
+}
+
 /*tablet*/
 @media (min-width: 768px) {
-  main {
+  body {
     flex-flow: row wrap;
   }
 }
 
 /*pc*/
 @media (min-width: 960px) {
-  main {
+  body {
     position: relative;
     width: 90%;
+  }
+
+  nav#info {
+    order: 0;
+    width: auto;
+    border-bottom: 0;
+    /*new*/
+    position: absolute;
+    top: 30px;
+    top: 1.875rem;
+    right: 30px;
+    right: 1.875rem;
+    z-index: 30;
+  }
+
+  nav#info ul {
+    display: flex;
+  }
+
+  nav#info li {
+    width: auto;
+    margin-left: 15px;
+    margin-left: 0.625rem;
+  }
+
+  nav#info li a {
+    display: block;
+    padding: 0;
   }
 }

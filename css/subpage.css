@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-main {
+body {
   flex-flow: column nowrap;
   width: 80%;
   max-width: 1200px;
@@ -8,14 +8,14 @@ main {
 }
 
 @media (min-width:768px){
-  main {
+  body {
     flex-flow: row wrap;
     
   }
 }
 
 @media (min-width: 960px){
-  main {
+  body {
     position: relative;
     width: 90%
   }
